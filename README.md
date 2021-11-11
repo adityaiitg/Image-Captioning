@@ -10,13 +10,6 @@ The loss value of **1.5987** has been achieved which gives good results. You can
 
 Everything is implemented in the Jupyter notebook which will hopefully make it easier to understand the code.
 
-# Examples
-
-!["first2"](https://raw.githubusercontent.com/yashk2810/Image-Captioning/master/images/first2.jpg "first2")
-!["second2"](https://raw.githubusercontent.com/yashk2810/Image-Captioning/master/images/second2.jpg "second2")
-!["third"](https://raw.githubusercontent.com/yashk2810/Image-Captioning/master/images/third.jpg "third")
-!["last1"](https://raw.githubusercontent.com/yashk2810/Image-Captioning/master/images/last1.jpg "last1")
-
 # Dependencies
 
 * Keras 1.2.2
