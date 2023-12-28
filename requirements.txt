@@ -1,4 +1,4 @@
-keras
 nltk
 tqdm
-tensorflow
+torch
+torchvision
