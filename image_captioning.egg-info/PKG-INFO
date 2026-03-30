@@ -1,3 +1,24 @@
+Metadata-Version: 2.4
+Name: image-captioning
+Version: 0.1.0
+Summary: Image Captioning with PyTorch and VGG19
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: nltk>=3.8.1
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: pillow>=10.3.0
+Requires-Dist: pyarrow>=16.1.0
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: tensorboard>=2.20.0
+Requires-Dist: torch>=2.3.0
+Requires-Dist: torchvision>=0.18.0
+Requires-Dist: tqdm>=4.66.4
+Dynamic: license-file
+
 # Image Captioning with PyTorch & VGG19
 
 This repository contains a full end-to-end Image Captioning system implemented in PyTorch. It uses **VGG19** for extracting image features and a standard Encoder-Decoder recurrent neural network using an **LSTM** to generate captions. By default, it uses the Flickr8k dataset.
@@ -61,20 +82,3 @@ Then, open [http://localhost:6006/](http://localhost:6006/) in your browser.
 
 1. Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan: [Show and Tell: A Neural Image Caption Generator](https://arxiv.org/abs/1411.4555)
 2. Andrej Karpathy: [CS231n Winter 2016 Lesson 10 Recurrent Neural Networks, Image Captioning and LSTM](https://youtu.be/cO0a0QYmFm8?t=32m25s) 
-
----
-
-### Best Model Execution Statistics
-
-The repository successfully replicates and trains using the following hyperparameters and environment on the Flickr8k dataset:
-
-- 💻 **Hardware Used**: Apple Silicon (MPS Backend) natively triggered via `torch.device("mps")`
-- ⚙️ **Hyperparameters**: 
-  - `Embed Size: 512`, `Hidden Size: 512`, `Layers: 2`
-  - `Optimizer: AdamW (1e-3 LR, 1e-4 weight decay)`
-  - `Vocab Size: 4956`
-- 📈 **Convergence**: Validated with a 15-epoch cycle; testing found `Val Loss` seamlessly converging from `3.378` down to **`2.555`** where the `best_model.pth` was natively saved.
-
-**Sample Inference Achieved:**
-- *Actual Test String*: `A large brown dog is jumping into the ocean .`
-- *Model Output generated*: `A dog is running through the water .`

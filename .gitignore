@@ -1,1 +1,30 @@
-# dataset
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Project specific ignores
+dataset/Images
+weights/
+*.h5
+*.pt
+*.pth
+unique.p
+
+# TensorBoard event logs
+runs/
+
+# uv lock file
+# uv.lock is typically committed for reproducible builds, but we can leave it uncommented 
+# if the user wants it tracked.
