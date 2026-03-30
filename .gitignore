@@ -4,6 +4,8 @@ __MACOSX/
 *.py[cod]
 *$py.class
 
+*.egg-info
+
 # Virtual Environments
 .venv/
 env/
